@@ -51,6 +51,7 @@ az vm create \
   --vnet-name MAIN-vNET \
   --nsg NSG-MAIN \
   --subnet SUBNET-01 \
+  --size Standard_B1s \
   --image UbuntuLTS
 
 az vm extension set \
