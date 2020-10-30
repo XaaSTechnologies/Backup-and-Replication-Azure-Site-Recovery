@@ -43,16 +43,15 @@ az network vnet subnet update \
   --name SUBNET-01 \
   --network-security-group NSG-MAIN
 
-
 az vm create \
   --resource-group RG-19-ASR \
   --name VM-01 \
   --admin-username adminuser \
   --admin-password adminadmin123! \
-  --image UbuntuLTS \
-  --vnet-name MAIN-vNET \ 
+  --vnet-name MAIN-vNET \
   --nsg NSG-MAIN \
-  --subnet SUBNET-01
+  --subnet SUBNET-01 \
+  --image UbuntuLTS
 
 az vm extension set \
   --publisher Microsoft.Azure.Extensions \
