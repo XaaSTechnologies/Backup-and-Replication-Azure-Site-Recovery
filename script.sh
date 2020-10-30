@@ -53,7 +53,7 @@ az vm create \
   --subnet SUBNET-01 \
   --size Standard_B2s \
   --image UbuntuLTS
-
+  
 az vm extension set \
   --publisher Microsoft.Azure.Extensions \
   --version 2.0 \
